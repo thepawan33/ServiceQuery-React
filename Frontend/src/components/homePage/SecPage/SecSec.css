@@ -1,0 +1,36 @@
+.SecSec-main {
+  height: 460px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.SecSec-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.SecSec-img img {
+  height: 100%;
+  width: 100%;
+}
+.SecSec-text {
+  margin-top: 3rem;
+  flex: 1;
+}
+.SecSec-text h6 {
+  font-size: 1.3rem;
+}
+
+.SecSec-text p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: rgba(0, 0, 0, 0.454);
+}
+.SecSec-p-li {
+  text-align: center;
+}
+@media (max-width: 760px) {
+  .SecSec-main {
+    height: auto;
+  }
+}

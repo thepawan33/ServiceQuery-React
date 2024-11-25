@@ -1,0 +1,13 @@
+.Header {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/src/assets/header.png");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+.Header h1 {
+  font-size: 4rem;
+}

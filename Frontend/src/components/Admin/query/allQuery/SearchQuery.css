@@ -1,0 +1,38 @@
+.singleData-page {
+  background-color: white;
+  height: 80%;
+  margin: 2rem;
+  padding: 4rem 0 0 1.5rem;
+  animation-duration: 0.5s;
+  animation-name: sliden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.del-btn {
+  background-color: red;
+  width: 5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+@keyframes sliden {
+  from {
+    transform: translateY(30rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@media (max-width: 430px) {
+  .singleData-page {
+    margin: 0.8rem;
+  }
+}
+@media (max-width: 990px) and (min-width: 761px) {
+  .singleData-page {
+    margin: 1rem;
+  }
+}

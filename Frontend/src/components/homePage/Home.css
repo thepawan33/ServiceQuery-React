@@ -1,0 +1,89 @@
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.first-sec {
+  height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 137, 228, 0.8),
+      rgba(0, 137, 228, 0.8)
+    ),
+    url("/src/assets/elect-4.png");
+  background-size: cover;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  justify-content: space-around;
+}
+.first {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  color: white;
+}
+.first h1 {
+  font-size: 3.25rem;
+}
+@media (max-width: 565px) {
+  .first h1 {
+    font-size: 2.2rem;
+  }
+}
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  height: 660px;
+  width: 468px;
+  background-color: #f6f6f8;
+  margin: 2rem;
+  box-shadow: -0rem 0rem 2rem rgba(0, 137, 228);
+  animation-duration: 1s;
+  animation-name: sliden;
+}
+.second-sec {
+  height: 1050px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.sec-third {
+  height: 300px;
+  background-color: black;
+}
+@media (max-width: 1135px) and (min-width: 760px) {
+  .first-sec {
+    height: auto;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .first-sec {
+    height: auto;
+    padding: 0;
+    width: 100%;
+  }
+  .second-sec {
+    height: auto;
+  }
+  .second {
+    height: auto;
+    margin: 1rem;
+  }
+}
+
+@keyframes sliden {
+  from {
+    transform: translateY(30rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}

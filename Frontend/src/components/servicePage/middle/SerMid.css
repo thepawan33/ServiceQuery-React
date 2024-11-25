@@ -1,0 +1,12 @@
+.mid-ser {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rem 15rem 0rem 15rem;
+  background-color: white;
+}
+@media (max-width: 1250px) {
+  .mid-ser {
+    height: auto;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+}

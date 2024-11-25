@@ -1,0 +1,20 @@
+.third-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 650px;
+  background-color: #f6f6f6;
+  padding: 5rem;
+}
+@media (max-width: 1250px) and (min-width: 507px) {
+  .third-service {
+    height: auto;
+  }
+}
+@media (max-width: 507px) {
+  .third-service {
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

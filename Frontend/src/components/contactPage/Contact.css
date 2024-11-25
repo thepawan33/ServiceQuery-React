@@ -1,0 +1,38 @@
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0rem 10rem;
+  padding: 7rem 0rem;
+}
+
+.cont_first1 {
+  flex: 1;
+}
+.cont_seco2 {
+  flex: 1;
+}
+.city {
+  height: 350px;
+  width: 80%;
+  object-fit: cover;
+}
+@media (max-width: 1150px) and (min-width: 760px) {
+  .contactInfo {
+    margin: 0rem 0rem;
+  }
+}
+@media (max-width: 760px) {
+  .contactInfo {
+    margin: 0rem 0rem;
+    margin-left: 1rem;
+  }
+
+  .city {
+    width: 350px;
+    height: 350px;
+  }
+  .ContSec {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.237);
+  }
+}

@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 360px;
+  color: black;
+  text-align: center;
+}
+.main h2 {
+  font-size: 2.6rem;
+}
+.main p {
+  margin-top: 2rem;
+  font-size: 0.945rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 460px) {
+  .main {
+    height: auto;
+  }
+}

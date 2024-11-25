@@ -1,0 +1,85 @@
+.email-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.setNull {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("/src/assets/email.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.allEmail {
+  flex: 1;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.emailBox {
+  flex: 1;
+  background-image: url("/src/assets/email.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: sticky;
+  top: 5rem;
+  border-top: 1px solid black;
+}
+.closeButton {
+  display: none;
+}
+.clr-btn {
+  height: 3rem;
+  padding: 0 0.5rem 0 0.5rem;
+  width: fit-content;
+  margin: 0.5rem 0 0.5rem 1rem;
+  color: red;
+  z-index: 555;
+  background-color: white;
+}
+.clr-btn:hover {
+  background-color: black;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .closeButton {
+    display: initial;
+    position: absolute;
+    top: 0.2rem;
+    left: 1rem;
+    color: white;
+    width: 1.8rem;
+    text-align: center;
+  }
+  .closeButton:hover {
+    cursor: pointer;
+    background-color: #0089e4;
+    transform: scale(1.125);
+  }
+  .emailBox {
+    display: none;
+  }
+  #check:checked ~ .emailBox {
+    display: initial;
+  }
+  #check:checked ~ .allEmail {
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+  .closeButton {
+    color: black;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+}

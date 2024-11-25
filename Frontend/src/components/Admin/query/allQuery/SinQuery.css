@@ -1,0 +1,59 @@
+.SinQuery-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-top: 1px solid black;
+}
+.SinQuery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  flex-direction: column;
+  flex: 1;
+}
+.SinQuery-main:hover {
+  cursor: pointer;
+  background-color: #f6f6f6;
+}
+
+.query-span {
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+.Sin-sec {
+  align-content: end;
+}
+.query-time {
+  color: rgba(17, 0, 255, 0.662);
+  font-size: 0.8rem;
+}
+.unread-name {
+  font-weight: 700;
+}
+.unread-email {
+  color: blue;
+  font-weight: 700;
+}
+@media (max-width: 1000px) and (min-width: 760px) {
+  .Sin-sec {
+    padding-left: 1rem;
+  }
+  .SinQuery-main {
+    flex-direction: column;
+  }
+}
+@media (max-width: 520px) {
+  .SinQuery-main {
+    flex-direction: column;
+  }
+  .Sin-sec {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 370px) {
+  .query-span {
+    line-height: 1rem;
+  }
+}

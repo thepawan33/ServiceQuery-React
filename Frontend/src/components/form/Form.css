@@ -1,0 +1,28 @@
+form {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+p {
+  line-height: 3rem;
+}
+input {
+  background-color: #fafafa;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+textarea {
+  background-color: #fafafa;
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 6rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
