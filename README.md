@@ -1,1 +1,0 @@
-# ServiceQuery-React
