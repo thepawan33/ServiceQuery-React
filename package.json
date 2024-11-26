@@ -1,0 +1,18 @@
+{
+  "name": "servicequery-react",
+  "version": "1.0.0",
+  "description": "w",
+  "main": "index.js",
+  "scripts": {
+   "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix Backend\" \"npm run dev --prefix Frontend\"",
+    "build": "npm run build --prefix Frontend",
+    "start": "npm run build --prefix Frontend && npm start --prefix Backend"
+  },
+  "keywords": [],
+  "author": "Pavan Singh",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
