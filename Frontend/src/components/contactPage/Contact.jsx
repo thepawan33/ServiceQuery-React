@@ -1,6 +1,6 @@
 import SerHeader from "../servicePage/header/SerHeader";
 import "./Contact.css";
-import ContFirst from "../ContFirst.jsx";
+import ContFirst from "./ContFirst.jsx";
 import ContSec from "./ContSec.jsx";
 export default function Contact() {
   return (
