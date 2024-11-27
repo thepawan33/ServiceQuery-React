@@ -1,7 +1,7 @@
 import SerHeader from "../servicePage/header/SerHeader";
 import "./Contact.css";
-import ContFirst from "./contFirst";
-import ContSec from "./ContSec";
+import ContFirst from "../ContFirst.jsx";
+import ContSec from "./ContSec.jsx";
 export default function Contact() {
   return (
     <div className="contact" style={{ overflow: "auto" }}>
