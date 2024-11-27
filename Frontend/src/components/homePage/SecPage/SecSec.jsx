@@ -4,7 +4,7 @@ export default function SecSec() {
   return (
     <div className="SecSec-main">
       <div className="SecSec-img">
-        <img src="src/assets/elect-1.png" alt="hello" />
+        <img src="/assets/elect-1.png" alt="hello" />
       </div>
       <div className="SecSec-text">
         <h6>Fusce Porta Euismod Magna, Eu Vehicula Tellus Feugiat.</h6>

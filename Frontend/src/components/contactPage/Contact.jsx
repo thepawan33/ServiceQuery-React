@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="contactInfo">
         <div className="cont_first1">
           <ContFirst />
-          <img src="/src/assets/city.jpg" alt=" image" className="city" />
+          <img src="/assets/city.jpg" alt=" image" className="city" />
         </div>
         <div className="cont_seco2">
           <ContSec />

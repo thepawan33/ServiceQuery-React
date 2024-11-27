@@ -2,7 +2,6 @@ import { useState } from "react";
 import Button from "./Button";
 import "./Form.css";
 import AlertComponent from "../ReusableComponent/Alert";
-import { api } from "../ReusableComponent/ApiConfig";
 import Loading from "../ReusableComponent/Loading";
 import { useSelector, useDispatch } from "react-redux";
 import { showAlert, hideAlert } from "../../app/slices/counterSlice";

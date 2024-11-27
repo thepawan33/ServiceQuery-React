@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="info">
-        <img src="/src/assets/logo.png" alt="logo" />
+        <img src="/assets/logo.png" alt="logo" />
         <p>
           Aliquam suscipit felis a arcu laoreet congue. Habeo nemore
           appellanturusu putant adolescens conse quuntur ei, mel tempor

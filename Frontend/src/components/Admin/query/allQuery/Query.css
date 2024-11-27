@@ -6,7 +6,7 @@
 .setNull {
   display: flex;
   flex-wrap: wrap;
-  background-image: url("/src/assets/email.png");
+  background-image: url("/assets/email.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 
 .emailBox {
   flex: 1;
-  background-image: url("/src/assets/email.png");
+  background-image: url("/assets/email.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

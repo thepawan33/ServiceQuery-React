@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="navbar">
       {logQuery && <LogQueryLink adminMenu={adminMenu} />}
       <div className="logo">
-        <img src="/src/assets/logo.png" alt="logo" />
+        <img src="/assets/logo.png" alt="logo" />
       </div>
       <div className={`menu ${isOpen && "open"}`}>
         <ul>
