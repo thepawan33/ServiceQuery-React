@@ -1,4 +1,4 @@
-import ContactInfo from "./contactInfo";
+import ContactInfo from "./ContactInfo.jsx";
 export default function ContFirst() {
   return (
     <div className="cont_first">
