@@ -1,4 +1,4 @@
-import ContactInfo from "./contactInfo";
+import ContactInfo from "./ContactInfo";
 
 export default function ContSec() {
   return (
