@@ -19,12 +19,12 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<Login />} />
           <Route path="/admin/query" element={<Query />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
         <Footer />
       </Router>
