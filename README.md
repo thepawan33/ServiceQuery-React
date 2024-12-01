@@ -38,6 +38,8 @@ Electricians or businesses can provide their company details, services offered, 
 
 - **Axios**: Axios is used to make API calls to communicate with the backend for query submission and management. Axios interceptors are implemented to handle token refresh automatically when the JWT expires.
 
+- **Redux & Redux Toolkit**: Redux and Redux Toolkit are used for state management, making it easier to manage and update the global state (like alerts etc.).
+
 - **React Router**: React Router is used for navigation between different pages of the platform, such as the home page and the admin panel.
 
 - **CSS**: The project uses CSS for styling the user interface and making it responsive across different screen sizes.
