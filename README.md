@@ -20,6 +20,10 @@ Electricians or businesses can provide their company details, services offered, 
 
 - **JWT Authentication**: Secure routes are implemented using JSON Web Tokens (JWT) to ensure that only authorized users (admins) can access and manage queries.
 
+- **Redux for State Management**: Redux and Redux Toolkit are used for global state management. This includes managing and displaying alerts.
+
+- **Alert Management**: Redux is utilized to handle global alerts across the app, allowing the display of success, error, or info messages for the users, ensuring clear communication and user-friendly experience.
+
 - **Axios Interceptors**: Axios is configured with interceptors to automatically handle token expiration. If the admin’s JWT token has expired, the system will automatically use a refresh token to obtain a new JWT, ensuring the admin doesn't have to log in again.
 
 - **Token Handling**: The system sends the JWT in the authorization header as a **Bearer Token** for secure API requests. If the token is expired, the Axios interceptor will initiate the refresh process without requiring the admin to manually log in again.

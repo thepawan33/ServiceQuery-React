@@ -19,11 +19,8 @@ export const alertSlice = createSlice({
     hideAlert: (state) => {
       state.alert.open = false;
     },
-    refreshToken: (state, action) => {
-      state.refreshToken = action.payload;
-    },
   },
 });
 
-export const { showAlert, hideAlert, refreshToken } = alertSlice.actions;
+export const { showAlert, hideAlert } = alertSlice.actions;
 export default alertSlice.reducer;
