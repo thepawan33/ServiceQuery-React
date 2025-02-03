@@ -5,7 +5,7 @@ import AlertComponent from "../ReusableComponent/Alert";
 import Loading from "../ReusableComponent/Loading";
 import { useSelector, useDispatch } from "react-redux";
 import { showAlert, hideAlert } from "../../app/slices/counterSlice";
-import axios from "axios";
+import { logQueryApi } from "../../utils/logQueryApi";
 
 export default function Form() {
   let [formData, setFormData] = useState({
@@ -39,10 +39,7 @@ export default function Form() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post(
-        `${import.meta.env.VITE_API_PATH}/query`,
-        formData
-      );
+      const response = await logQueryApi.post("/query", formData);
       if (response.status === 200) {
         alertMsg("success", "Query Send Successfully!");
       }

@@ -1,5 +1,5 @@
 import "./SinQuery.css";
-import { DateFormater } from "../../../ReusableComponent/DeteFromater";
+import { DateFormater } from "../../../../utils/DeteFromater";
 export default function SinQuery({
   name,
   purpose,

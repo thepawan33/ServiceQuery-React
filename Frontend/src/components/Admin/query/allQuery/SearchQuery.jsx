@@ -1,8 +1,8 @@
 import "./SearchQuery.css";
 import { useState } from "react";
 import AlertComponent from "../../../ReusableComponent/Alert";
-import { DateFormater } from "../../../ReusableComponent/DeteFromater";
-import { api } from "../../../ReusableComponent/ApiConfig";
+import { DateFormater } from "../../../../utils/DeteFromater";
+import { api } from "../../../../utils/ApiConfig";
 import Loading from "../../../ReusableComponent/Loading";
 import { useSelector, useDispatch } from "react-redux";
 import { showAlert, hideAlert } from "../../../../app/slices/counterSlice";

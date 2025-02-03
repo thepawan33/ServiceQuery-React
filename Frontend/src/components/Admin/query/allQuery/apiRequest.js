@@ -1,4 +1,4 @@
-import { api } from "../../../ReusableComponent/ApiConfig";
+import { api } from "../../../../utils/ApiConfig";
 
 const clearInbox = async (alertMsg, setLoading, fetchQuery) => {
   try {

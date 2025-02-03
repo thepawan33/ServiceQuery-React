@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../../form/Button";
 import "./Login.css";
-import { api } from "../../ReusableComponent/ApiConfig";
+import { logQueryApi } from "../../../utils/logQueryApi";
 import { useNavigate } from "react-router-dom";
 import AlertComponent from "../../ReusableComponent/Alert";
 import Loading from "../../ReusableComponent/Loading";
@@ -36,7 +36,7 @@ export default function Login() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await api.post("/admin/login", formData);
+      const response = await logQueryApi.post("/admin/login", formData);
       if (response && response.data) {
         sessionStorage.setItem("token", response.data.accessToken);
         alertMsg("success", "login  successful!");
