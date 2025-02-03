@@ -9,6 +9,9 @@ const api = axios.create({
 api.interceptors.request.use(
   async (modify) => {
     const token = sessionStorage.getItem("token");
+    if (!token) {
+      await newTokenAccess();
+    }
     if (token) {
       modify.headers.authorization = `${
         import.meta.env.VITE_API_SECRET
