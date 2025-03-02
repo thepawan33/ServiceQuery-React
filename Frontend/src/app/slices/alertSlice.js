@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const alertSlice = createSlice({
+const alertSlice = createSlice({
   name: "alert",
   initialState: {
     alert: { open: false, severity: "", message: "" },

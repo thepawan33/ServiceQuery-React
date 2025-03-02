@@ -5,7 +5,7 @@ import { DateFormater } from "../../../../utils/DeteFromater";
 import { api } from "../../../../utils/ApiConfig";
 import Loading from "../../../ReusableComponent/Loading";
 import { useSelector, useDispatch } from "react-redux";
-import { showAlert, hideAlert } from "../../../../app/slices/counterSlice";
+import { showAlert, hideAlert } from "../../../../app/slices/alertSlice";
 
 export default function SearchQuery({ search, fetchQueries, updateState }) {
   let [loading, setLoading] = useState(false);

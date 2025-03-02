@@ -5,7 +5,7 @@ import SearchQuery from "./SearchQuery";
 import CloseIcon from "@mui/icons-material/Close";
 import AlertComponent from "../../../ReusableComponent/Alert";
 import Loading from "../../../ReusableComponent/Loading";
-import { showAlert, hideAlert } from "../../../../app/slices/counterSlice";
+import { showAlert, hideAlert } from "../../../../app/slices/alertSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { clearInbox, fetchQueries, getId } from "./apiRequest";
 

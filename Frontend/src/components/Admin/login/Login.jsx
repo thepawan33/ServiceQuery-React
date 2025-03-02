@@ -5,7 +5,7 @@ import { logQueryApi } from "../../../utils/logQueryApi";
 import { useNavigate } from "react-router-dom";
 import AlertComponent from "../../ReusableComponent/Alert";
 import Loading from "../../ReusableComponent/Loading";
-import { showAlert, hideAlert } from "../../../app/slices/counterSlice";
+import { showAlert, hideAlert } from "../../../app/slices/alertSlice";
 import { useSelector, useDispatch } from "react-redux";
 
 export default function Login() {
@@ -13,6 +13,7 @@ export default function Login() {
     username: "",
     password: "",
   });
+
   let [loading, setLoading] = useState(false);
   const alert = useSelector((state) => state.alert);
   const dispatch = useDispatch();

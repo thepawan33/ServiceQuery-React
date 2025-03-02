@@ -4,7 +4,7 @@ import "./Form.css";
 import AlertComponent from "../ReusableComponent/Alert";
 import Loading from "../ReusableComponent/Loading";
 import { useSelector, useDispatch } from "react-redux";
-import { showAlert, hideAlert } from "../../app/slices/counterSlice";
+import { showAlert, hideAlert } from "../../app/slices/alertSlice";
 import { logQueryApi } from "../../utils/logQueryApi";
 
 export default function Form() {

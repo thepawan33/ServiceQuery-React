@@ -1,6 +1,7 @@
 import axios from "axios";
 import { isTokenExpired } from "./isTokenExpired";
 import { logQueryApi } from "./logQueryApi";
+
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_PATH,
   withCredentials: true,
@@ -9,8 +10,9 @@ const api = axios.create({
 api.interceptors.request.use(
   async (modify) => {
     const token = sessionStorage.getItem("token");
+
     if (!token) {
-      await newTokenAccess();
+      await getRefreshToken();
     }
     if (token) {
       modify.headers.authorization = `${
@@ -20,7 +22,7 @@ api.interceptors.request.use(
       console.log("Sorry, you are not authorized.");
     }
     if (token && isTokenExpired(token) === true) {
-      await newTokenAccess();
+      await getRefreshToken();
     }
     return modify;
   },
@@ -29,7 +31,7 @@ api.interceptors.request.use(
   }
 );
 
-const newTokenAccess = async () => {
+const getRefreshToken = async () => {
   try {
     const response = await logQueryApi.post("/admin/token");
     if (response && response.data) {
@@ -45,4 +47,4 @@ const newTokenAccess = async () => {
   }
 };
 
-export { api, newTokenAccess };
+export { api };
